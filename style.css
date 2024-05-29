@@ -112,7 +112,7 @@ body{
   font-weight: 800;
   border: 3px dashed maroon;
   border-radius: 12px;
-  transform: translateY(300px);
+  transform: translateY(-150px);
 }
 .joy{
   color: maroon;
