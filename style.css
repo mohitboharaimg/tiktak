@@ -26,7 +26,7 @@ body{
 .box{
   width: 33.33%;
   height: 33.33%;
-  background-color: #023047;
+  background-color: maroon;
   border: 4px solid #8ecae6;
   border-radius: 15px;
   cursor: pointer;
