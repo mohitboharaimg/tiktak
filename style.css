@@ -102,7 +102,6 @@ body{
 .msg{
   background-color: white;
   margin-top: 12px;
-  width: 300px;
   height: max-content;
   display: flex;
   align-items: center;
