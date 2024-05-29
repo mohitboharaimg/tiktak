@@ -102,6 +102,7 @@ body{
 .msg{
   background-color: white;
   margin-top: 12px;
+  width: 300px;
   height: max-content;
   display: flex;
   align-items: center;
@@ -111,6 +112,7 @@ body{
   font-weight: 800;
   border: 3px dashed maroon;
   border-radius: 12px;
+  transform: translateY(300px);
 }
 .joy{
   color: maroon;
