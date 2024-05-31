@@ -16,7 +16,7 @@ html,body{
   background-color: rgb(202, 238, 202);
 }
 #panel{
-  width: 80%;
+  width: 300px;
   height: 80%;
   background-color: white;
   border-radius: 10px;
