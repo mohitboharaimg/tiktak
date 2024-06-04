@@ -147,3 +147,4 @@ window.addEventListener('keydown', e =>{
     }
 
 });
+foodElement.classList.add('top')

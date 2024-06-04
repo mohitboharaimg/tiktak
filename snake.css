@@ -62,5 +62,11 @@
     background: linear-gradient(red, purple);
     border: .25vmin solid black;
     border-radius: 8px;
-    
+
+}
+.top {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px;
 }
