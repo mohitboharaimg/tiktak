@@ -34,7 +34,7 @@
 }
 
 #board{
-    background: rgb(87, 155, 87);
+    background:black;
     width: 90vmin;
     height: 92vmin;
     border: 2px solid black;
@@ -45,36 +45,42 @@
 }
 
 .head{
-    background-color: #0f0;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-image: url(Newfolder/img/snake.png);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
-
+    background-size: 30px;
+    background-repeat: no-repeat;
 }
 
 
 .snake{
-    background-color: black;
     border: .25vmin solid white;
     border-radius: 16px;
     height: 50%;
     margin-block: auto;
+    animation: random 5s infinite;
 
+}
+@keyframes  random {
+    15% { background-color: red; } 
 }
 
 .food{
     background: purple;
     border: .25vmin solid black;
     border-radius: 8px;
+    height: 50%;
+    width: 50%;
+    animation: blink 1s linear infinite;
+
 
 }
+@keyframes blink {
+    0%, 100% {transform: scale(.5);}
+    50% {transform: scale(1.1);}
+  }
 .top {
     color: white;
     background-color: black;
@@ -140,3 +146,28 @@ head.eye {
     position: absolute;
     bottom: 5px;
 }
+.btnholder{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+  
+  }
+  .pre{
+    background-color: black;
+    width: max-content;
+    height: max-content;
+    padding: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .pbtmBtn{
+    background: black;
+    padding: 8px 16px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 6px;
+  }

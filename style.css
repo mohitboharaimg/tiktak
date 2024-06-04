@@ -10,6 +10,7 @@ body{
   background-color:#023047 ;
   height: 100vh;
   flex-direction: column;
+  overflow: hidden;
 }
 .gamescreen{
   width: 300px;
