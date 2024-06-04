@@ -118,7 +118,20 @@ window.requestAnimationFrame(main);
 window.addEventListener('keydown', e =>{
     inputDir = {x: 0, y: 1} // Start the game
     moveSound.play();
-    switch (e.key) {
+    switchCaseFun(e.key)
+
+});
+
+let clickBtns = document.querySelectorAll('.clickBtn');
+clickBtns.forEach(item=> {
+    item.addEventListener('click', (e)=> {
+        const clickedItem = e.currentTarget.getAttribute('direction')
+        switchCaseFun(clickedItem)
+    })
+})
+
+const switchCaseFun = (key)=> {
+    switch (key) {
         case "ArrowUp":
             console.log("ArrowUp");
             inputDir.x = 0;
@@ -144,46 +157,8 @@ window.addEventListener('keydown', e =>{
             break;
         default:
             break;
-    }
+    } 
+}
 
-});
-// Variables to store touch start position
-let touchStartX = 0;
-let touchStartY = 0;
 
-// Touch event listeners
-window.addEventListener('touchstart', e => {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-});
-
-window.addEventListener('touchend', e => {
-    const touchEndX = e.changedTouches[0].clientX;
-    const touchEndY = e.changedTouches[0].clientY;
-
-    const diffX = touchEndX - touchStartX;
-    const diffY = touchEndY - touchStartY;
-
-    if (Math.abs(diffX) > Math.abs(diffY)) {
-        // Horizontal swipe
-        if (diffX > 0) {
-            console.log("Swipe Right");
-            changeDirection(1, 0);
-        } else {
-            console.log("Swipe Left");
-            changeDirection(-1, 0);
-        }
-    } else {
-        // Vertical swipe
-        if (diffY > 0) {
-            console.log("Swipe Down");
-            changeDirection(0, 1);
-        } else {
-            console.log("Swipe Up");
-            changeDirection(0, -1);
-        }
-    }
-    moveSound.play();
-});
-Explanatio
  foodElement.classList.add('food')
